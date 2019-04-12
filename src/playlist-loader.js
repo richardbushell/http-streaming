@@ -363,8 +363,6 @@ export default class PlaylistLoader extends EventTarget {
       playlist = this.master.playlists[playlist];
     }
 
-    window.clearTimeout(this.mediaUpdateTimeout);
-
     if (isFinalRendition) {
       const delay = (playlist.targetDuration / 2) * 1000 || 5 * 1000;
 
